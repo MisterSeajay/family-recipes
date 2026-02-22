@@ -1,25 +1,25 @@
 # _data/authors.yml
-"Dad":
+"Charles":
   name: "Charles"
   bio: "Chief food taster & site admin."
   avatar: "/assets/images/dad.jpg" # You can add photos later
 
-"Wife":
+"Susannah":
   name: "Susannah"
   bio: "Vegan specialist and plant-based enthusiast."
 
-"Son1":
+"William":
   name: "William"
   bio: "Master of the Grill."
 
-"Son2":
+"Edward":
   name: "Edward"
   bio: "Pudding and Dessert Connoisseur."
 
-"Son3":
+"Henry":
   name: "Henry"
   bio: "Fusspot extraordinaire."
 
-"Daughter1":
+"Rosalie":
   name: "Rosalie"
   bio: "Italian tastes."
