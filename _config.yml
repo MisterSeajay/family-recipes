@@ -12,3 +12,4 @@ locale: "en-GB"
 minimal_mistakes_skin: "dirt" # Options: air, aqua, contrast, dark, dirt, neon, sunrise, etc.
 
 site_navigation: main
+author_profile: true
