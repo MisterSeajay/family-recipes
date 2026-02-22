@@ -18,6 +18,12 @@ sidebar:
     text: "45 mins"
   - title: "Serves"
     text: "4 People"
+prep_time: 15
+cook_time: 30
+total_time: 45
+yield: "4 servings"
+tm_speed: "Speed 4"
+tm_temp: "100°C"
 ---
 
 # Introduction
