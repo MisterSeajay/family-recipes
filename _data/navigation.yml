@@ -1,0 +1,10 @@
+# _data/navigation.yml
+main:
+  - title: "Vegan"
+    url: /categories/vegan/
+  - title: "Meat Dishes"
+    url: /categories/meat/
+  - title: "Puddings"
+    url: /categories/puddings/
+  - title: "Cooking Course"
+    url: /categories/course/
