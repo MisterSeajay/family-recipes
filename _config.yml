@@ -13,3 +13,7 @@ minimal_mistakes_skin: "dirt" # Options: air, aqua, contrast, dark, dirt, neon, 
 
 site_navigation: main
 author_profile: true
+
+# Search Settings
+search: true
+search_full_content: true # This lets you search ingredients, not just titles
