@@ -2,6 +2,8 @@
 main:
   - title: "All Recipes"
     url: /categories/
+  - title: "Search"
+    url: /search/    # This is a built-in URL for the theme
   - title: "About the Chefs"
     url: /about/
   - title: "Vegan"
