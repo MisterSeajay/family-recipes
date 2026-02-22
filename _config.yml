@@ -17,3 +17,6 @@ author_profile: true
 # Search Settings
 search: true
 search_full_content: true # This lets you search ingredients, not just titles
+
+url: "https://cookbook.joynt.co.uk"
+baseurl: "" # Keep this empty since you're using a dedicated subdomain
