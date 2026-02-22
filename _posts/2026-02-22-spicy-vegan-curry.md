@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Spicy Vegan Chickpea Curry"
-author: "Wife"        # Must match the key in authors.yml
+author: "Susannah"    # Must match the key in authors.yml
 categories:
   - Vegan             # Main classification
 tags:
