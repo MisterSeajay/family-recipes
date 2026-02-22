@@ -1,5 +1,9 @@
 # _data/navigation.yml
 main:
+  - title: "All Recipes"
+    url: /categories/
+  - title: "About the Chefs"
+    url: /about/
   - title: "Vegan"
     url: /categories/vegan/
   - title: "Meat Dishes"
