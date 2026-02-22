@@ -1,5 +1,7 @@
 ---
 layout: single
+header:
+  overlay_image: /assets/images/header-photo.jpg
 title: "REPLACE_WITH_RECIPE_NAME"
 author: "REPLACE_WITH_YOUR_NAME_FROM_AUTHORS_YML"
 categories:
@@ -9,6 +11,13 @@ tags:
 toc: true
 toc_label: "Recipe Steps"
 toc_icon: "utensils"
+sidebar:
+  - title: "Prep Time"
+    text: "15 mins"
+  - title: "Cook Time"
+    text: "45 mins"
+  - title: "Serves"
+    text: "4 People"
 ---
 
 # Introduction
