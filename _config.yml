@@ -1,0 +1,12 @@
+# Site Settings
+title: "Family Recipes"
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Required Plugins for GitHub Pages
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# Minimal Mistakes Specific Settings
+locale: "en-GB"
+minimal_mistakes_skin: "dirt" # Options: air, aqua, contrast, dark, dirt, neon, sunrise, etc.
