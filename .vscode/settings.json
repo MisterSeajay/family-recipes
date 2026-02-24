@@ -1,0 +1,68 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#c8ae8d",
+        "activityBar.background": "#c8ae8d",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#3e8164",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#c8ae8d",
+        "statusBar.background": "#b8956a",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#a27c4d",
+        "statusBarItem.remoteBackground": "#b8956a",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#b8956a",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#b8956a99",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#b8956a",
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        },
+        {
+            "name": "Sand",
+            "value": "#b8956a"
+        },
+        {
+            "name": "Slate Grey",
+            "value": "#708090"
+        }
+    ]
+}
