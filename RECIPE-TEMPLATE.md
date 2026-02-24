@@ -5,7 +5,7 @@ header:
 title: "REPLACE_WITH_RECIPE_NAME"
 author: "REPLACE_WITH_YOUR_NAME_FROM_AUTHORS_YML"
 categories:
-  - "CHOOSE_ONE: Vegan, Meat, Puddings, or Course"
+  - "CHOOSE_ONE: Vegan, Meat, Puddings, Baking, or Course"
 tags:
   - "CHOOSE_ANY: Quick, Spicy, Healthy, Holiday, Favorite"
 toc: true
