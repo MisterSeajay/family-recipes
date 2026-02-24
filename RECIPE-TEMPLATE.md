@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-  overlay_image: /assets/images/header-photo.jpg
+  overlay_image: /assets/images/header-photo.png
 title: "REPLACE_WITH_RECIPE_NAME"
 author: "REPLACE_WITH_YOUR_NAME_FROM_AUTHORS_YML"
 categories:
@@ -45,7 +45,7 @@ Write a short sentence about why you love this dish or where you learned it!
 
 ## 📸 Photos
 If you have a photo, put it in `/assets/images/recipes/` and link it below:
-![Description of food](/assets/images/recipes/your-photo-name.jpg)
+![Description of food](/assets/images/recipes/your-photo-name.png)
 
 ## 💡 Chef's Tips
 * *Tip 1: Goes great with a side of rice.*

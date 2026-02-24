@@ -1,16 +1,18 @@
 # _data/navigation.yml
 main:
+  - title: "Home"
+    url: /
   - title: "All Recipes"
     url: /categories/
-  - title: "Search"
-    url: /search/    # This is a built-in URL for the theme
-  - title: "About the Chefs"
-    url: /about/
   - title: "Vegan"
-    url: /categories/vegan/
-  - title: "Meat Dishes"
-    url: /categories/meat/
+    url: /category/vegan/
+  - title: "Meat"
+    url: /category/meat/
   - title: "Puddings"
-    url: /categories/puddings/
-  - title: "Cooking Course"
-    url: /categories/course/
+    url: /category/puddings/
+  - title: "By Chef"
+    url: /recipes-by-chef/
+  - title: "Search"
+    url: /search/
+  - title: "About"
+    url: /about/
