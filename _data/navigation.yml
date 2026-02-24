@@ -10,6 +10,8 @@ main:
     url: /category/meat/
   - title: "Puddings"
     url: /category/puddings/
+  - title: "Baking"
+    url: /category/baking/
   - title: "By Chef"
     url: /recipes-by-chef/
   - title: "Search"

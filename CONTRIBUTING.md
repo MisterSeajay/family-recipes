@@ -9,19 +9,22 @@ All recipes live in the `_posts/` folder. Your file **must** follow this exact n
 *Example:* `2024-05-22-moms-vegan-lasagna.md`
 
 ## 2. The "Recipe Header" (Front Matter)
+
 Every recipe needs a header at the very top. Copy and paste this block and fill in your details:
 
+```yaml
 ---
 layout: single
 title: "Name of Your Recipe"
 author: "YourName"        # Must match your name in _data/authors.yml
 categories:
-  - Vegan                # Choose one: Vegan, Meat, Puddings, or Course
+  - Vegan                # Choose one: Vegan, Meat, Puddings, Baking, or Course
 tags:
   - Quick
   - Spicy
   - Favorite
 ---
+```
 
 ## 3. Writing the Recipe
 Use standard Markdown below the header:
