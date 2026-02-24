@@ -1,22 +1,47 @@
 # Site Settings
 title: "Family Recipes"
+description: "Our family's favourite recipes, collected and shared with love"
 remote_theme: "mmistakes/minimal-mistakes"
 
 # Required Plugins for GitHub Pages
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-paginate
 
 # Minimal Mistakes Specific Settings
 locale: "en-GB"
+timezone: "Europe/London"
 minimal_mistakes_skin: "dirt" # Options: air, aqua, contrast, dark, dirt, neon, sunrise, etc.
 
-site_navigation: main
-author_profile: true
+# Pagination
+paginate: 10
+paginate_path: /page:num/
+
+# Permalinks
+permalink: /:categories/:title/
 
 # Search Settings
 search: true
 search_full_content: true # This lets you search ingredients, not just titles
+lunr:
+  search_within_pages: true
 
+# Site URL
 url: "https://cookbook.joynt.co.uk"
 baseurl: "" # Keep this empty since you're using a dedicated subdomain
+
+# Default front matter
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: true
