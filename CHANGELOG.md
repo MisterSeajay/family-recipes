@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Added William's BBQ steak recipe with garlic butter and peppercorn sauce to Meat category (CKBK-00001)
+- Enhanced Susannah's Spicy Vegan Chickpea Curry with complete recipe details (CKBK-00001)
 - Added Rosalie's Marzipan recipe to Puddings category (CKBK-00001)
 
 ### Fixed
