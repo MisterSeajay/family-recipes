@@ -9,8 +9,8 @@ author_profile: true
   {% assign author_id = author[0] %}
   {% assign author_details = author[1] %}
   
-  ## {{ author_details.name }}
-  *{{ author_details.bio }}*
+  <h2>{{ author_details.name }}</h2>
+  <em>{{ author_details.bio }}</em>
 
   <ul>
     {% for post in site.posts %}
