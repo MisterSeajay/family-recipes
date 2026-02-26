@@ -7,5 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added Rosalie's Marzipan recipe to Puddings category (CKBK-00001)
+
 ### Fixed
 - Fixed chef headers on Recipes by Chef page rendering as literal "##" by replacing Markdown syntax with HTML tags inside Liquid for loop (CKBK-00001)
