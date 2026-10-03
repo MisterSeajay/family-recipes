@@ -56,6 +56,25 @@ Always run `git pull` before creating or editing files to prevent merge conflict
 - If the user provides an image, help them save/move it to `assets/images/` or `assets/images/recipes/`.
 - Link it in the Markdown file using: `![Description of photo](/assets/images/recipes/filename.png)`.
 
+#### Header images and their prompt files
+
+Each page banner in `assets/images/` follows a deliberate two-file naming pattern:
+
+- `header-<page>.png` — the actual image used by the site.
+- `header-<page>.txt` — the **image generation prompt** that produced it, kept as a plain-text record.
+
+**The `.txt` files are intentional. Do not delete them as clutter and do not try to "tidy them up".** They are the only record of how each header was made, which matters if one ever needs regenerating or restyling to match its siblings.
+
+Current pairs: `header-home`, `header-meat`, `header-vegan`, `header-puddings`, `header-baking`, `header-photo` (the generic fallback used by new recipe templates).
+
+To create a new header image, write the prompt to the matching `.txt` file first, then generate the image from it and save it as the matching `.png`. Two more things to know:
+
+- **Apply the sepia treatment.** `scripts/apply-sepia.py` converts images to greyscale then applies a sepia tint so every header shares one vintage, hand-drawn look regardless of what generated it. Run it in place on any new header:
+  ```bash
+  uv run scripts/apply-sepia.py assets/images/header-newpage.png --inplace
+  ```
+- **Wire it up in two places.** Add the `header.overlay_image` reference to the relevant page's front matter, and add the page to `_data/navigation.yml` if it is a new section. A header image that nothing references will never appear.
+
 ### Step E: Save and Publish
 1. Create or overwrite the recipe file in `_posts/`.
 2. Commit the changes with a clear human-friendly message (e.g., `git commit -am "Add Grandmas apple pie recipe"`).
@@ -68,3 +87,5 @@ Always run `git pull` before creating or editing files to prevent merge conflict
 - Template: [RECIPE-TEMPLATE.md](file:///c:/Users/micro/Development/family-recipes/RECIPE-TEMPLATE.md)
 - Authors data: [_data/authors.yml](file:///c:/Users/micro/Development/family-recipes/_data/authors.yml)
 - Main index page: [index.md](file:///c:/Users/micro/Development/family-recipes/index.md)
+- Navigation menu: [_data/navigation.yml](file:///c:/Users/micro/Development/family-recipes/_data/navigation.yml)
+- Header image styling: [scripts/apply-sepia.py](file:///c:/Users/micro/Development/family-recipes/scripts/apply-sepia.py)
