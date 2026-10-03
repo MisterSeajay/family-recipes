@@ -1,49 +1,69 @@
-# 🍳 How to Add a Recipe
+# 🛠️ Site Administration & Developer Guide
 
-Welcome to the family cookbook! To keep our site looking great and easy to search, please follow these steps when adding your delicious creations.
+This document is for site administrators and anyone looking to customize the layout, theme, configuration, or run maintenance tasks on the family cookbook Jekyll site.
 
-## 1. The Filename (Very Important!)
-All recipes live in the `_posts/` folder. Your file **must** follow this exact naming format:
-`YYYY-MM-DD-name-of-recipe.md`
+For details on how to add recipes (either manually or using the AI assistant), see the [README.md](file:///c:/Users/micro/Development/family-recipes/README.md).
 
-*Example:* `2024-05-22-moms-vegan-lasagna.md`
-
-## 2. The "Recipe Header" (Front Matter)
-
-Every recipe needs a header at the very top. Copy and paste this block and fill in your details:
-
-```yaml
 ---
-layout: single
-title: "Name of Your Recipe"
-author: "YourName"        # Must match your name in _data/authors.yml
-categories:
-  - Vegan                # Choose one: Vegan, Meat, Puddings, Baking, or Course
-tags:
-  - Quick
-  - Spicy
-  - Favorite
+
+## 1. Local Jekyll Development
+
+To preview the cookbook website locally on your computer:
+
+### Prerequisites
+- **Ruby**: Install Ruby (3.0 or higher recommended) for your OS.
+- **Bundler**: Install Bundler by running:
+  ```bash
+  gem install bundler
+  ```
+
+### Running the Site
+1. Open your terminal in this directory and install the required dependencies:
+   ```bash
+   bundle install
+   ```
+2. Start the local Jekyll server:
+   ```bash
+   bundle exec jekyll serve --livereload
+   ```
+3. Open your browser and navigate to `http://localhost:4000`. The page will reload automatically as you make changes to files.
+
 ---
+
+## 2. Configuration & Customization
+
+### Global Settings (`_config.yml`)
+The site uses the [Minimal Mistakes Theme](https://mmistakes.github.io/minimal-mistakes/). You can configure:
+- **Site Skins**: Change the look and feel by changing `minimal_mistakes_skin` in `_config.yml` (e.g., `dirt`, `sunrise`, `dark`, `neon`, `contrast`).
+- **Subdomain Settings**: Update `url` when deploying on custom subdomains or pages.
+
+### Data Management (`_data/`)
+- **Authors (`_data/authors.yml`)**: Add and edit biographical information for family members here. This controls the profiles displayed at the bottom of recipes and on author pages.
+- **Navigation (`_data/navigation.yml`)**: Modify the site menu links (Home, Categories, Search, etc.).
+
+---
+
+## 3. Maintenance Scripts & Utilities
+
+To maintain visual consistency across our recipe headers, we have utility scripts in the `scripts/` directory:
+
+### Image Sepia Processing (`scripts/apply-sepia.py`)
+This Python script processes header images matching `assets/images/header-*.png` and applies a vintage sepia tint. This ensures a consistent sketch/vintage illustration aesthetic across different pages.
+
+#### Requirements
+- Python 3.13+
+- Pillow library
+
+#### Commands
+You can run the script using standard Python or via `uv` (recommended):
+
+```bash
+# Preview results (creates new files with a '-sepia' suffix without altering originals)
+uv run scripts/apply-sepia.py
+
+# Modify header images in-place (replaces the original files)
+uv run scripts/apply-sepia.py --inplace
+
+# Modify specific files with a custom intensity (0.0 to 1.0; default is 0.8)
+uv run scripts/apply-sepia.py --intensity 0.6 --inplace assets/images/header-home.png
 ```
-
-## 3. Writing the Recipe
-Use standard Markdown below the header:
-
-* **Bold** text for emphasis: `**Preheat oven to 200°C**`
-* Use `###` for sub-headings (Ingredients, Method).
-* Use `*` for bullet points (Ingredients).
-* Use `1.` for numbered lists (Steps).
-
-## 4. Adding Images
-1. Save your photo in the `assets/images/` folder.
-2. Use a simple name like `lasagna.jpg`.
-3. Link it in your recipe like this:  
-   `![Description of photo](/assets/images/lasagna.jpg)`
-
-## 5. Sending it Live
-1. **Pull** the latest changes: `git pull origin main`
-2. **Create** your new file in the `_posts` folder.
-3. **Commit** your changes: `git commit -m "Added [Recipe Name]"`
-4. **Push** to GitHub: `git push origin main`
-
-The website will update automatically in about a minute! 🚀
