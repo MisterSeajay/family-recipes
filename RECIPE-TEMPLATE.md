@@ -26,17 +26,20 @@ tm_speed: "Speed 4"
 tm_temp: "100°C"
 ---
 
-# Introduction
+## Introduction
+
 Write a short sentence about why you love this dish or where you learned it!
 
 ---
 
 ## 🛒 Ingredients
-* Item 1
-* Item 2
-* Item 3
+
+- Item 1
+- Item 2
+- Item 3
 
 ## 🍳 Method
+
 1. First, do this...
 2. Next, do that...
 3. Finally, enjoy!
@@ -44,9 +47,12 @@ Write a short sentence about why you love this dish or where you learned it!
 ---
 
 ## 📸 Photos
+
 If you have a photo, put it in `/assets/images/recipes/` and link it below:
+
 ![Description of food](/assets/images/recipes/your-photo-name.png)
 
 ## 💡 Chef's Tips
-* *Tip 1: Goes great with a side of rice.*
-* *Tip 2: Can be stored in the fridge for 3 days.*
+
+- *Tip 1: Goes great with a side of rice.*
+- *Tip 2: Can be stored in the fridge for 3 days.*

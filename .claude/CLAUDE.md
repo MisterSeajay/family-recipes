@@ -2,7 +2,8 @@
 
 ## Project Overview
 
-This is a family cookbook website built with Jekyll and hosted on GitHub Pages at <https://cookbook.joynt.co.uk>. The site allows multiple family members to contribute recipes with their own author profiles.
+This is a family cookbook website built with Jekyll and hosted on GitHub Pages at <https://cookbook.joynt.co.uk>.
+The site allows multiple family members to contribute recipes with their own author profiles.
 
 ## Visual Design
 
@@ -24,7 +25,7 @@ This is a family cookbook website built with Jekyll and hosted on GitHub Pages a
 - `_data/authors.yml`: Family member profiles
 - `_data/navigation.yml`: Site navigation menu
 - `assets/images/`: Header images and recipe photos
-- `scripts/`: Utility scripts (keep root clean)
+- `scripts/`: Utility scripts (keep root clean) - removed; image tooling now lives in the PyTools repo
 - `category-*.md`: Category archive pages
 
 ## Categories
@@ -45,22 +46,25 @@ Each category has:
 ## AI Image Generation
 
 **Style prompt template**:
-```
+
+```text
 [Subject description], pen and ink sketch style, detailed line work,
 warm sepia tones, artistic illustration, hand-drawn aesthetic,
 traditional cookbook illustration style, no text
 ```
 
-**Post-processing**: Run `uv run scripts/apply-sepia.py --inplace` to ensure consistent sepia treatment across all images.
+**Post-processing**: Run `format-image` from the PyTools repo to ensure a consistent sepia treatment across images.
 
 ## Scripts
 
-### scripts/apply-sepia.py
+### format-image (lives in the PyTools repo)
 
-- **Purpose**: Applies consistent grayscale-first sepia tone to header images
+- **Location**: `C:/Users/micro/Development/PyTools/image/src/pytools_image/format_image.py`
+- **Purpose**: Applies a consistent grayscale-first sepia tone to header images
 - **Method**: Converts to grayscale (luminosity), then applies sepia tint
 - **Default intensity**: 0.8
-- **Usage**: `uv run scripts/apply-sepia.py --inplace`
+- **Usage**: `uv run --project C:/Users/micro/Development/PyTools --package pytools-image format-image <files> --inplace`
+- **Note**: Not wired into any CI or build step; must be run by hand.
 
 ## Family Members (Authors)
 
@@ -81,7 +85,7 @@ traditional cookbook illustration style, no text
 
 ## Future Considerations
 
-- GitHub Actions could auto-apply sepia to new header images
+- GitHub Actions could auto-apply sepia to new header images (still only an idea; there are no workflows here)
 - Additional categories may be added based on family usage
 - Recipe photos should go in `assets/images/recipes/`
 - All images should be PNG format

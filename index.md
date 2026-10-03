@@ -15,7 +15,9 @@ excerpt: "A collection of our family's favourite recipes, from quick weeknight d
 
 # Welcome to Our Family Cookbook
 
-This is where we collect, share, and celebrate the recipes that bring us together around the table. Whether you're looking for Susannah's plant-based creations, William's BBQ expertise, or Edward's irresistible desserts, you'll find them all here.
+This is where we collect, share, and celebrate the recipes that bring us together around the table.
+Whether you're looking for Susannah's plant-based creations, William's BBQ expertise, or Edward's irresistible desserts,
+you'll find them all here.
 
 ## Latest Recipes
 
