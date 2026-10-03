@@ -58,7 +58,8 @@ local/
 *.code-workspace
 
 # AI coding agents
-.claude/scheduled_tasks.lock
-.claude/worktrees/
+# Agent-specific context files are local only. The shared, tracked guidance for
+# AI assistants is AGENTS.md at the repo root.
+.claude/
 .aider*
 .orphaned_at

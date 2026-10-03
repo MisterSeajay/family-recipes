@@ -124,8 +124,5 @@ markdownlint-cli2 "**/*.md"
 
 Use `markdownlint-cli2 "**/*.md" --fix` to auto-correct the mechanical issues (missing blank lines, list style).
 
-Notes:
-
-- `.claude/**` is excluded through `.markdownlint-cli2.jsonc`, as it is local agent context rather than site content.
-- There are no Jekyll theme files in this repository to exclude.
-  Minimal Mistakes is a `remote_theme` fetched at build time, so every tracked `.md` file is our own content.
+Every tracked `.md` file is linted. There are no Jekyll theme files in this repository to exclude, because Minimal
+Mistakes is a `remote_theme` fetched at build time rather than a vendored copy.

@@ -82,7 +82,17 @@ Current pairs: `header-home`, `header-meat`, `header-vegan`, `header-puddings`, 
 (the generic fallback used by new recipe templates).
 
 To create a new header image, write the prompt to the matching `.txt` file first, then generate the image from it and
-save it as the matching `.png`. Two more things to know:
+save it as the matching `.png`.
+
+Use this style template for the prompt, so a new banner matches the existing ones:
+
+```text
+[Subject description], pen and ink sketch style, detailed line work,
+warm sepia tones, artistic illustration, hand-drawn aesthetic,
+traditional cookbook illustration style, no text
+```
+
+Two more things to know:
 
 - **Apply the sepia treatment.** Every banner shares one vintage tone so the set looks like a matched set.
   The script for this lives in the **PyTools** repository, not here, and is run as:
@@ -101,7 +111,42 @@ save it as the matching `.png`. Two more things to know:
 
 ---
 
-## 3. Documentation Standards
+## 3. Site Reference
+
+### Visual design
+
+| Aspect | Value |
+| --- | --- |
+| Theme | Minimal Mistakes, via `remote_theme` |
+| Skin | `dirt` (warm, earthy) |
+| Overlay colour | `#b8956a` (sand) |
+| Header artwork | Pen-and-ink sketch, sepia toned |
+| Image format | PNG (holds illustration detail better than JPG) |
+
+Keep new work consistent with these. If a page needs a banner, it needs a matching pair of files in
+`assets/images/` as described in Step D.
+
+### Where things live
+
+- `_posts/` — recipe files, named `YYYY-MM-DD-recipe-name.md`
+- `_data/authors.yml` — family profiles, shown at the foot of recipes
+- `_data/navigation.yml` — the site menu
+- `category-<name>.md` — one archive page per category
+- `assets/images/` — header images and their prompt files
+- `assets/images/recipes/` — photographs of the food itself
+
+Every category needs all three of: its `category-<name>.md` page, a `header-<name>.png`, and a `header-<name>.txt`
+prompt file.
+
+### Deploying
+
+Work on `main` and push. GitHub Pages rebuilds the site automatically, taking roughly one to two minutes.
+There is no CI in this repository and no commit message convention to follow; write whatever message best describes
+the change.
+
+---
+
+## 4. Documentation Standards
 
 Markdown in this repo is linted with `markdownlint-cli2`, using the rules in `.markdownlint.json` (mirroring the
 conventions of the PyTools repository). Prose wraps at 120 characters.
@@ -112,15 +157,17 @@ markdownlint-cli2 "**/*.md"
 
 Notes:
 
-- `.claude/**` is excluded via `.markdownlint-cli2.jsonc` because it is local agent context, not site content.
-- There are **no Jekyll theme files here to exclude**. Minimal Mistakes is a `remote_theme` pulled in at build time,
-  so every tracked `.md` file is our own content and should be linted.
+- Every tracked `.md` file is linted, including this one.
+  There are **no Jekyll theme files here to skip**: Minimal Mistakes is a `remote_theme` pulled in at build time, so
+  there is no vendored `_includes`/`_layouts`/`_sass`.
 - `authors-archive.md` disables the inline-HTML rule locally, because it is a Liquid template that must emit literal
   HTML inside a `{% for %}` loop.
+- Guidance for AI assistants belongs in this file. Tool-specific agent folders such as `.claude/` are gitignored
+  rather than tracked.
 
 ---
 
-## 4. Reference Files
+## 5. Reference Files
 
 - Template: [RECIPE-TEMPLATE.md](file:///c:/Users/micro/Development/family-recipes/RECIPE-TEMPLATE.md)
 - Authors data: [_data/authors.yml](file:///c:/Users/micro/Development/family-recipes/_data/authors.yml)

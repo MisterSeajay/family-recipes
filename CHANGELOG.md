@@ -15,7 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documented in AGENTS.md that the `header-*.txt` files alongside each header image are the intentional image
   generation prompts, not clutter, along with the two places a new header must be wired up
 - Adopted the PyTools repository's Markdown standards: added `.markdownlint.json` (120-character wrap, matching
-  PyTools) and `.markdownlint-cli2.jsonc`, which excludes `.claude/**` as local agent context rather than site content
+  PyTools). Every tracked `.md` file is now linted
+- Added the site design tokens (theme, skin, overlay colour, image format), a map of the repository layout, and the
+  header image style prompt template to AGENTS.md
 - Documented in AGENTS.md and CONTRIBUTING.md that no GitHub Actions workflow exists and that the sepia step for
   header images must be run by hand
 
@@ -33,6 +35,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+- Removed `.claude/` and untracked `.claude/CLAUDE.md`. Its content was either duplicated in AGENTS.md or has been
+  folded into it. Guidance for AI assistants now lives solely in AGENTS.md, and `.claude/` is gitignored so any
+  local copy stays out of the repository
+- Dropped the `CKBK-00001` commit prefix requirement, which referred to a local git hook that no longer applies.
+  Commit messages are now free-form
 - Removed `scripts/apply-sepia.py` and the now-empty `scripts/` directory, having moved the functionality to PyTools.
   The old name also broke the house naming convention: `apply` is not an approved PowerShell verb
 - Dropped the unused `Course` category from the documented category list. It was never used by any recipe and appears
