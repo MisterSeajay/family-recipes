@@ -38,7 +38,7 @@ layout: single
 title: "Name of Your Recipe"
 author: "YourName"        # Must match your name in _data/authors.yml
 categories:
-  - Vegan                # Choose one: Vegan, Meat, Puddings, Baking, or Course
+  - Vegan                # Choose one: Vegan, Meat, Puddings, or Baking
 tags:
   - Quick
   - Spicy

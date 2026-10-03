@@ -46,7 +46,7 @@ Always run `git pull` before creating or editing files to prevent merge conflict
    - `layout: single`
    - `title`: Recipe Name (e.g., `"Moms Lasagna"`)
    - `author`: Must match the exact key in `_data/authors.yml` (e.g., `"Susannah"`)
-   - `categories`: Must be one of: `Vegan`, `Meat`, `Puddings`, `Baking`, or `Course`. If it doesn't fit, help them choose or create a new category file like `category-XYZ.md` if necessary, but prefer the existing ones.
+   - `categories`: Must be one of: `Vegan`, `Meat`, `Puddings`, or `Baking`. If it doesn't fit, help them choose a sensible existing one rather than inventing a new category.
    - `tags`: Add relevant tags (e.g., `Quick`, `Spicy`, `Healthy`, `Favorite`).
    - `toc: true`
    - `sidebar`: Fill out prep time, cook time, and serving size.

@@ -12,5 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced Susannah's Spicy Vegan Chickpea Curry with complete recipe details (CKBK-00001)
 - Added Rosalie's Marzipan recipe to Puddings category (CKBK-00001)
 
+### Removed
+- Dropped the unused `Course` category from the documented category list. It was never used by any recipe and appears to be a leftover from an earlier Starter/Main/Dessert scheme that `Puddings` superseded. Docs now steer contributors towards the four categories that actually exist rather than letting them create new ones.
+
 ### Fixed
 - Fixed chef headers on Recipes by Chef page rendering as literal "##" by replacing Markdown syntax with HTML tags inside Liquid for loop (CKBK-00001)
